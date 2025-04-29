@@ -23,21 +23,43 @@ count=0
 let result=0
 console.log(questionvar)
 let clicked=()=>{
- if (count<data.length) {
+if (count<data.length) {
     questionvar.innerHTML = "<h2>" + data[count].question + "</h2>"; // display question
 
-    // for(i=0;i<data.length;i++){
-    //          answeroptions.innerHTML="<h2>"+ data[i].options+"</h2>"
-    // }
-    //         answeroptions.innerHTML="<h2>"+ data[i].options+"</h2>`"
+    console.log(data[count].question)
 
-    console.log(data[count])
+    // Clear old options
+    answeroptions.innerHTML = " ";
+
+    // for(j=0;j<data[count].options.length;j++){
+    //     answeroptions.innerHTML = `<label><input type="radio" name="quizOption" value="${data[count].options[j]}">${data[count].options[j]}</label>`; 
+    /*                             ^  
+                                   | need to add +=
+    ..............................
+    Code	Behavior	Result
+    innerHTML =	Replaces content each time	Only last option shows
+    innerHTML +=	Appends content each time	All options show correctly*/
+    //console.log(data[count].options[j]);
+
+    // }
+    for(j = 0; j < data[count].options.length; j++) {
+        answeroptions.innerHTML += `<label><input type="radio" name="quizOption" value="${data[count].options[j]}">${data[count].options[j]}</label><br>`; 
+        console.log(data[count].options[j]);    
+    }
+    
     count=count+1;
- }else{
-    questionvar.innerHTML = "<h2>Quiz Completed!</h2>"; // message after all questions
-    submitbtnclick.disabled = true; // disable button after quiz ends
- }
 
 }
+else{    
 
-clicked(count)
+    questionvar.innerHTML = '<h2 class="animate__animated animate__bounce"   style = "color: green;">Quiz Completed!</h2>';
+    answeroptions.innerHTML = "";
+    submitbtnclick.style.display = "none";
+    
+}
+}
+
+window.onload = function () {
+    clicked();
+  };
+  

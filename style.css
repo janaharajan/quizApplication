@@ -12,7 +12,7 @@ body{
     font-size: medium;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1{
+h1,#headingID{
     /* font-size: small; */
     color: white;
 }
@@ -55,4 +55,5 @@ h1{
 
     position: relative  ;
     /* border: 1px light gray; */
+
 }
