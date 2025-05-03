@@ -26,9 +26,9 @@
 
 ![image](https://github.com/user-attachments/assets/1a534693-e076-4ca3-a4b4-17160ed908d2)
 ![image](https://github.com/user-attachments/assets/04c95a84-c478-4893-a483-84dd600b254c)
-🧑‍💻 Author
-Janaharajan
-LinkedIn • GitHub
+<p><b>🧑‍💻 Author
+Janaharajan</b></p>
+<a href="https://www.linkedin.com/in/janaharajan/">LINKED IN</a> • GitHub
 
 
 
