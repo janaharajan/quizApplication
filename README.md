@@ -1,6 +1,6 @@
 <h1># 🎯 Quiz Application</h1>
-<h2>**A simple and interactive quiz web application built using **HTML, CSS, and JavaScript**. Users can answer multiple-choice questions and get their final score at the end.
-**</h2>
+<h2>A simple and interactive quiz web application built using HTML, CSS, and JavaScript. Users can answer multiple-choice questions and get their final score at the end.
+</h2>
 <h2>## 🚀 Features
 </h2>
 <p>- Displays one question at a time with multiple-choice answers
