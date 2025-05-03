@@ -62,7 +62,7 @@ if (count<data.length) {
     count=count+1;
 
 }
-
+//pull ku oru test
 else {    
     questionvar.innerHTML = `
     <h2 class="animate__animated animate__bounce" 
